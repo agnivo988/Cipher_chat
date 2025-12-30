@@ -5,6 +5,7 @@ import { connected } from 'process'
 import { authMiddleware } from './auth'
 import z from 'zod'
 import { Message, realtime } from '@/lib/realtime'
+import {cors} from '@elysiajs/cors'
 
 const ROOM_TTL_SECONDS = 60*10
 
@@ -93,7 +94,16 @@ const messages = new Elysia({prefix: "/messages"}).use(authMiddleware).post("/",
         query: z.object({roomId: z.string()})
     }
 )
-const app = new Elysia({ prefix: "/api" }).use(room).use(messages)
+const app = new Elysia({ prefix: '/api' })
+  .use(cors({
+    origin: [
+      'https://cipher-chat-pi.vercel.app',
+      'http://localhost:3000'
+    ],
+    credentials: true
+  }))
+  .use(room)
+  .use(messages)
 
 export const GET = app.fetch 
 export const POST = app.fetch 
