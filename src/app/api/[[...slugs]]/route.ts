@@ -94,7 +94,7 @@ const messages = new Elysia({prefix: "/messages"}).use(authMiddleware).post("/",
         query: z.object({roomId: z.string()})
     }
 )
-const app = new Elysia({ prefix: 'https://cipher-chat-pi.vercel.app/api' })
+const app = new Elysia({ prefix: '/api' })
   .use(cors({
     origin: [
       'https://cipher-chat-pi.vercel.app',

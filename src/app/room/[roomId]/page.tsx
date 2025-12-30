@@ -6,7 +6,7 @@ import { useMutation, useQueries, useQuery } from "@tanstack/react-query"
 import { useRealtime } from "@upstash/realtime/client"
 import { format } from "date-fns"
 import { useParams, useRouter } from "next/navigation"
-import { JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal, useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 function formatTimeRemaining(seconds: number)
 {
@@ -153,7 +153,7 @@ const Page = () => {
                 </div>
             )}
 
-            {messages?.messages.map((msg: { id: Key | null | undefined; sender: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined; timeStamp: string | number | Date; text: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined }) => (
+            {messages?.messages.map((msg) => (
                 <div key={msg.id} className="flex flex-col items-start">
                     <div className="max-w-[80%] group">
                         <div className="flex items-baseline gap-3 mb-1">
