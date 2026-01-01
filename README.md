@@ -1,23 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔐 Cipher Chat
 
-## Getting Started
+**Cipher Chat** is a secure, real-time private chat application designed for fast, reliable, and confidential one-to-one communication. It uses modern web technologies to deliver a smooth user experience with strong authentication and real-time messaging.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- 🔑 User Authentication (Register & Login)
+- 💬 Real-time Private Messaging
+- 🧠 Room-based Chat System
+- ⚡ Instant Message Delivery
+- 🔒 Secure & Private Communication
+- 🎨 Modern UI with Animations
+- 📱 Fully Responsive Design
+- 🌐 Deployed Frontend & Backend
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Axios
+
+### Backend
+- Node.js
+- Elysia / Express
+- Redis (Room & session management)
+- WebSockets (Real-time messaging)
+- JWT Authentication
+
+---
+
+## 📂 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-
+cipher_chat/
+├── frontend/
+│   ├── app/
+│   ├── components/
+│   ├── lib/
+│   └── styles/
+│
+├── backend/
+│   ├── routes/
+│   ├── middleware/
+│   ├── lib/
+│   └── server.ts
+│
+└── README.md
