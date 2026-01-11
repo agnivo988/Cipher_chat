@@ -1,23 +1,23 @@
-# 🔐 Cipher Chat
+# Cipher Chat
 
 **Cipher Chat** is a secure, real-time private chat application designed for fast, reliable, and confidential one-to-one communication. It uses modern web technologies to deliver a smooth user experience with strong authentication and real-time messaging.
 
 ---
 
-## 🚀 Features
+## Features
 
-- 🔑 User Authentication (Register & Login)
-- 💬 Real-time Private Messaging
-- 🧠 Room-based Chat System
-- ⚡ Instant Message Delivery
-- 🔒 Secure & Private Communication
-- 🎨 Modern UI with Animations
-- 📱 Fully Responsive Design
-- 🌐 Deployed Frontend & Backend
+-  User Authentication (Register & Login)
+-  Real-time Private Messaging
+-  Room-based Chat System
+-  Instant Message Delivery
+-  Secure & Private Communication
+-  Modern UI with Animations
+-  Fully Responsive Design
+-  Deployed Frontend & Backend
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 - Next.js (App Router)
@@ -35,7 +35,7 @@
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```bash
 cipher_chat/
